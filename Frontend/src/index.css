@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --mental-primary: #4CAF50; /* Default - Green (neutral) */
+    --mental-secondary: #81C784;
+    --mental-background: rgba(76, 175, 80, 0.05);
+    --mental-light: #E8F5E9;
+    --mental-surface: #F5FFF5;
+    --mental-text: #2E7D32; /* Dark green for text */
+    --mental-text-muted: rgba(46, 125, 50, 0.7); /* Muted green text */
+    
+    --tab-active-bg: var(--mental-primary);
+    --tab-inactive-bg: var(--mental-light);
+    
+    --background: 48 100% 97%; /* Light warm background */
+    --foreground: 262 25% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 262 25% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 262 25% 20%;
+
+    --primary: 270 100% 65%; /* Purple - great */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 100% 65%; /* Blue - good */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 48 60% 96%; /* Light yellow */
+    --muted-foreground: 262 15% 50%;
+
+    --accent: 120 40% 50%; /* Green - neutral */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%; /* Red - terrible */
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 48 60% 90%; /* Light yellow border */
+    --input: 48 60% 90%;
+    --ring: 270 100% 65%; /* Purple */
+
+    --radius: 1rem;
+  }
+
+  .dark {
+    --mental-primary: #4CAF50; /* Default - Green (neutral) */
+    --mental-secondary: #81C784;
+    --mental-background: rgba(76, 175, 80, 0.05);
+    --mental-light: #E8F5E9;
+    --mental-surface: #F5FFF5;
+    --mental-text: #2E7D32; /* Dark green for text */
+    --mental-text-muted: rgba(46, 125, 50, 0.7); /* Muted green text */
+    
+    --tab-active-bg: var(--mental-primary);
+    --tab-inactive-bg: var(--mental-light);
+    
+    --background: 262 25% 10%;
+    --foreground: 260 25% 95%;
+
+    --card: 262 25% 12%;
+    --card-foreground: 260 25% 95%;
+
+    --popover: 262 25% 12%;
+    --popover-foreground: 260 25% 95%;
+
+    --primary: 270 100% 65%; /* Purple - great */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 100% 65%; /* Blue - good */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 262 25% 20%;
+    --muted-foreground: 260 15% 70%;
+
+    --accent: 120 40% 50%; /* Green - neutral */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%; /* Red - terrible */
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 262 25% 20%;
+    --input: 262 25% 20%;
+    --ring: 270 100% 65%; /* Purple */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground transition-colors duration-300;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--mental-text);
+    transition: color 0.3s ease;
+  }
+  
+  p {
+    transition: color 0.3s ease;
+  }
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gradient-to-b from-red-400 via-yellow-400 to-purple-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gradient-to-b from-red-500 via-yellow-500 to-purple-500;
+}
+
+@layer components {
+  .mental-gradient-bg {
+    @apply bg-gradient-to-br from-mental-surface via-white to-mental-light;
+  }
+  
+  .mental-card {
+    @apply bg-white rounded-xl border border-mental-light shadow-sm hover:shadow-md transition-shadow duration-300;
+  }
+  
+  .mental-button {
+    background-color: var(--mental-primary);
+    @apply px-4 py-2 rounded-full text-white font-medium transition-all duration-300 
+    hover:opacity-90 active:scale-95 disabled:opacity-50 disabled:pointer-events-none;
+  }
+  
+  .mental-input {
+    border-color: var(--mental-light);
+    @apply px-4 py-3 rounded-lg bg-white focus:outline-none 
+    focus:ring-2 focus:ring-opacity-30 transition-all duration-300;
+  }
+
+  .mental-input:focus {
+    box-shadow: 0 0 0 2px var(--mental-primary);
+    opacity: 0.3;
+  }
+
+  .mental-text {
+    color: var(--mental-text);
+  }
+  
+  .mental-text-muted {
+    color: var(--mental-text-muted);
+  }
+
+  .satisfaction-gradient {
+    @apply bg-gradient-to-r from-red-500 via-yellow-400 via-green-400 via-blue-400 to-purple-500;
+  }
+  
+  /* Custom tab styles */
+  [data-state="active"][role="tab"] {
+    background-color: var(--mental-primary) !important;
+    color: white !important;
+  }
+}
