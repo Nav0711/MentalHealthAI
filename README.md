@@ -73,12 +73,6 @@ GEMINI_API_KEY=your_gemini_api_key_here
 
 ✨ Responsive chat interface with elegant UI components
 
-🌗 Light and Dark theme support
-
-🔁 Auto-refresh for development with Vite
-
-🛡️ Google safety scoring to prevent harmful content
-
 📦 Scalable project structure for future features
 
 ## Disclaimer
