@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroLink - Mental Health Co-pilot for Students</title>
+    <!-- <script src="main.js" defer type="module"></script> -->
+    <link rel="stylesheet" href="Landing.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.7c0 4.4-3.5 8-9 8s-9-3.6-9-8 4-6.3 9-6.3 9 1.9 9 6.3z"></path>
+                <path d="M14.5 3l-1.5 3 1.5 3"></path>
+                <path d="M9.5 3l1.5 3-1.5 3"></path>
+            </svg>
+            NeuroLink
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button class="login-btn" id="loginBtn">Login</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Your Mental Health Co-pilot</h1>
+                <p>NeuroLink is a smart mental health assistant that detects emotional distress passively and provides proactive support using AI. Designed specifically for students to help develop self-awareness and healthy habits.</p>
+                <div class="cta-buttons">
+                    <a href="http://localhost:8080/" class="primary-btn" >Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>  
+    
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Our Features</h2>
+            <p class="section-subtitle">NeuroLink provides powerful tools to help students navigate their mental health journey with confidence and support.</p>
+            
+            <!-- Feature Boxes -->
+            <div class="feature-boxes">
+                <!-- Mood Tracker -->
+                <div class="feature-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                        <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                        <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                    </svg>
+                    <h3>Mood Tracker</h3>
+                    <p>Track your emotional patterns and identify triggers with our intuitive mood tracking system. Get insights on your emotional well-being over time.</p>
+                </div>
+                
+                <!-- AI Assistant -->
+                <div class="feature-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        <circle cx="9" cy="10" r="1"></circle>
+                        <circle cx="15" cy="10" r="1"></circle>
+                        <path d="M9.5 15a3.5 3.5 0 0 0 5 0"></path>
+                    </svg>
+                    <h3>AI Mental Health Support</h3>
+                    <p>Get personalized support and coping strategies from our AI assistant. Available 24/7 to help you navigate emotional challenges.</p>
+                </div>
+                
+                <!-- Journal Writing -->
+                <div class="feature-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+                    </svg>
+                    <h3>Journal Writing</h3>
+                    <p>Express your thoughts and feelings in a safe, private journal. Our AI analyzes entries to provide insights and track your emotional progress.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/image.png" alt="Student mental health support">
+                </div>
+                <div class="about-text">
+                    <h2>Student Mental Health Crisis</h2>
+                    <p>The mental health of college and university students has become a growing concern worldwide. According to recent studies, approximately 40% of college students report experiencing significant mental health issues, including anxiety, depression, and stress-related disorders.</p>
+                    
+                    <div class="stat-box">
+                        <div class="stat-number">73%</div>
+                        <div class="stat-text">of students report experiencing a mental health crisis during their college years</div>
+                    </div>
+                    
+                    <div class="stat-box">
+                        <div class="stat-number">67%</div>
+                        <div class="stat-text">of students don't seek help due to stigma or lack of accessible resources</div>
+                    </div>
+                    
+                    <p>At NeuroLink, we understand the unique challenges students face. Academic pressure, social adjustment, financial stress, and career uncertainty can all contribute to mental health struggles. Our platform provides a private, accessible solution that meets students where they are.</p>
+                    
+                    <p>Through passive monitoring and AI-powered insights, NeuroLink can detect early warning signs of mental health issues before they escalate. Our personalized approach helps students develop healthy coping mechanisms, build resilience, and maintain emotional wellness throughout their academic journey.</p>
+                    
+                    <p>With NeuroLink as your mental health co-pilot, you can navigate the challenges of student life with greater self-awareness and support. Our goal is to make mental health resources accessible to all students and reduce the barriers to seeking help.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">Have questions or want to learn more about NeuroLink? We're here to help.</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+120 8888 8888</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:neurolink@gmail.com">neurolink@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Office</h3>
+                            <p>123 Innovation Drive, Tech Campus</p>
+                            <p>Silicon Valley, CA 94025</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Support Hours</h3>
+                            <p>Monday - Friday: 9AM - 6PM</p>
+                            <p>Weekend: 10AM - 4PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send us a message</h3>
+                    <form>
+                        <div class="input-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Your name">
+                        </div>
+                        <div class="input-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" placeholder="your@email.com">
+                        </div>
+                        <div class="input-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="How can we help you?"></textarea>
+                        </div>
+                        <button type="submit" class="primary-btn" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="logo" style="justify-content: center; color: white; margin-bottom: 1rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.7c0 4.4-3.5 8-9 8s-9-3.6-9-8 4-6.3 9-6.3 9 1.9 9 6.3z"></path>
+                <path d="M14.5 3l-1.5 3 1.5 3"></path>
+                <path d="M9.5 3l1.5 3-1.5 3"></path>
+            </svg>
+            NeuroLink
+        </div>
+        <p>&copy; 2025 NeuroLink. All rights reserved.</p>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <h2>Welcome to NeuroLink</h2>
+                <p>Sign in to your account</p>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="••••••••" required>
+                </div>
+                <div class="remember">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <a href="http://localhost:8080"><button type="submit" class="primary-btn" style="width: 100%;">Sign In</button></a>
+            </form>
+            <div class="modal-footer">
+                <p>Don't have an account? <a href="#">Sign up</a></p>
+            </div>  
+        </div>
+    </div>
+
+
+    <script>
+        // Modal functionality
+        const modal = document.getElementById("loginModal");
+        const loginBtn = document.getElementById("loginBtn");
+        const getStartedBtn = document.getElementById("getStartedBtn");
+        const closeBtn = document.getElementsByClassName("close");
+
+        // Open modal when clicking Login button
+        loginBtn.onclick = function() {
+            modal.style.display = "flex";
+        }
+
+        // Open modal when clicking Get Started button
+        getStartedBtn.onclick = function(e) {
+            e.preventDefault();
+            modal.style.display = "flex";
+        }
+
+        // Close modal when clicking X
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        };
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                if(this.getAttribute('href') === '#') return;
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
